@@ -1,0 +1,480 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #f4f6f9;
+    color: #243047;
+    line-height: 1.7;
+}
+
+/* แถบเมนูด้านบน */
+
+.navbar {
+    background: white;
+    border-bottom: 1px solid #e3e8ef;
+}
+
+.nav-container {
+    width: min(1100px, 92%);
+    margin: auto;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #243b63;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #66738a;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.nav-menu a:hover,
+.nav-menu .active {
+    color: #243b63;
+    border-bottom: 2px solid #243b63;
+}
+
+/* พื้นที่เนื้อหาหลัก */
+
+.container {
+    width: min(1100px, 92%);
+    margin: 35px auto;
+}
+
+/* ส่วนแนะนำหลักสูตร */
+
+.hero {
+    background: linear-gradient(120deg, #172b4d, #34598c);
+    color: white;
+    padding: 60px 45px;
+    border-radius: 20px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #b4c8e5;
+    margin: 0 0 18px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #c8daf1;
+    margin: 5px 0 20px;
+}
+
+.hero-description {
+    color: #e0e9f6;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    padding: 6px 16px;
+    border: 1px solid #ffffff40;
+    background: #ffffff12;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+/* หัวข้อแต่ละส่วน */
+
+.section {
+    margin-top: 38px;
+}
+
+.section-title {
+    font-size: 23px;
+    color: #243b63;
+    margin: 0 0 20px;
+    padding-left: 13px;
+    border-left: 4px solid #34598c;
+}
+
+.section-description {
+    color: #66738a;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+/* ข้อมูลทั่วไป */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.info-card {
+    background: white;
+    border: 1px solid #e3e8ef;
+    border-radius: 15px;
+    padding: 24px;
+}
+
+.info-card .label {
+    font-size: 13px;
+    color: #778399;
+    margin: 0 0 8px;
+}
+
+.info-card h3 {
+    font-size: 20px;
+    color: #243b63;
+    margin: 0;
+}
+
+.info-card p {
+    color: #66738a;
+    margin: 4px 0 0;
+}
+
+/* กล่องเนื้อหา */
+
+.content-card {
+    background: white;
+    border: 1px solid #e3e8ef;
+    border-radius: 15px;
+    padding: 28px;
+}
+
+.content-card p {
+    margin: 0 0 14px;
+    color: #536178;
+    line-height: 1.9;
+}
+
+.content-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* จุดเด่นหลักสูตร */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.feature-card {
+    background: white;
+    border: 1px solid #e3e8ef;
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.25s;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px #243b6312;
+}
+
+.number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #edf2fa;
+    color: #243b63;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #243b63;
+    margin: 0 0 5px;
+}
+
+.feature-card .feature-label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #5275a7;
+    margin: 0 0 14px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #66738a;
+    margin-bottom: 0;
+}
+
+/* คุณลักษณะของบัณฑิต */
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+.skill-list li {
+    position: relative;
+    padding: 13px 0 13px 30px;
+    border-bottom: 1px solid #e8edf3;
+}
+
+.skill-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #34598c;
+    font-weight: bold;
+}
+
+.skill-list li:last-child {
+    border-bottom: none;
+}
+
+/* แนวทางการประกอบอาชีพ */
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.career-card {
+    background: white;
+    border: 1px solid #e3e8ef;
+    border-radius: 12px;
+    padding: 22px;
+    transition: 0.2s;
+}
+
+.career-card:hover {
+    border-color: #93a9c9;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px #243b6310;
+}
+
+.career-card h3 {
+    color: #243b63;
+    font-size: 17px;
+    margin: 0 0 7px;
+}
+
+.career-card p {
+    color: #778399;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ส่วนเว็บไซต์อ้างอิง */
+
+.source-card {
+    margin-top: 40px;
+    padding: 35px;
+    border-radius: 18px;
+    background: #e8eef7;
+    border: 1px solid #d5e0ef;
+}
+
+.source-card h2 {
+    margin: 0 0 10px;
+    color: #243b63;
+    font-size: 23px;
+}
+
+.source-card p {
+    color: #536178;
+    margin: 0 0 22px;
+}
+
+.website-button {
+    display: inline-block;
+    background: #243b63;
+    color: white;
+    text-decoration: none;
+    padding: 13px 23px;
+    border-radius: 9px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.website-button:hover {
+    background: #34598c;
+}
+
+/* ปุ่มด้านล่าง */
+
+.bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 28px;
+}
+
+.outline-button,
+.primary-button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.outline-button {
+    background: white;
+    border: 1px solid #cbd7e7;
+    color: #243b63;
+}
+
+.outline-button:hover {
+    background: #e8eef7;
+}
+
+.primary-button {
+    background: #243b63;
+    border: 1px solid #243b63;
+    color: white;
+}
+
+.primary-button:hover {
+    background: #34598c;
+}
+
+/* ส่วนท้ายเว็บไซต์ */
+
+footer {
+    margin-top: 45px;
+    padding: 25px 15px;
+    background: #243b63;
+    color: #c8d5e8;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* รองรับแท็บเล็ต */
+
+@media (max-width: 900px) {
+    .feature-grid,
+    .career-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* รองรับโทรศัพท์ */
+
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 8px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container {
+        margin: 20px auto;
+    }
+
+    .hero {
+        padding: 30px 24px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .info-grid,
+    .feature-grid,
+    .career-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .content-card,
+    .source-card {
+        padding: 22px;
+    }
+
+    .bottom-menu a {
+        flex: 1;
+        text-align: center;
+    }
+}
+/* Technology Background */
+
+body {
+    background-color: #f4f6f9;
+
+    background-image:
+        linear-gradient(#243b6309 1px, transparent 1px),
+        linear-gradient(90deg, #243b6309 1px, transparent 1px),
+        radial-gradient(
+            ellipse at top left,
+            #dce7f7 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse at bottom right,
+            #dce7f7 0%,
+            transparent 50%
+        );
+
+    background-size:
+        35px 35px,
+        35px 35px,
+        100% 100%,
+        100% 100%;
+
+    background-attachment: fixed;
+}
